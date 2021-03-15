@@ -34,3 +34,32 @@ result = add_three(4)
 - the parent of a frame is the parent of the fucntion called.
 
 Local Names
+Lambad Functions
+
+```python
+>>> x = 10
+>>> square = x * x
+>>> square
+100
+>>> square = lambda x: x * x
+>>> square(10)
+100
+>>> (lambda x: x * x)(3)
+
+>>> square
+<function <lambda> at 0x7f7f781055e0>
+>>> def square(x):
+...     return x * x
+... 
+>>> square
+<function square at 0x7f7f78105670>
+```
+
+Lambda Expression vs. Def
+- Both create a function with the same domain, range, and behavior.
+- Both bind that function to the name square.
+- Only the def statement gives the function an intrinsic name, which shows  up in environment diagrams but doesn't affect execution (unless the function is printed).
+
+Environment Example:
+
+
